@@ -91,7 +91,7 @@ CMD ["node_modules/vite/bin/vite.js", "--host", "0.0.0.0", "--port", "3000"]
 
 #### **Step 1: Build the Docker Image**
 ```sh
-docker build -t online_shop:latest
+docker build -t online_shop:latest .
 ```
 
 #### **Step 2: List All Docker Images**
@@ -106,7 +106,7 @@ docker scout quickview online_shop
 
 #### **Step 4: Create a Docker Network**
 ```sh
-docker network create ved-net
+docker network create my-net
 ```
 
 #### **Step 5: Run the Container**
@@ -148,4 +148,3 @@ Open your browser and visit:
 5. Create a Pull Request (PR) 🚀
 
 ---
-#thank you .
