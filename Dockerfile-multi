@@ -1,0 +1,32 @@
+#Stage 1 - Development
+
+FROM node:18 AS builder
+
+# Set a working directory for stage 1
+WORKDIR /app
+
+# Copy packages
+COPY package*.json ./
+
+# Install packages
+RUN npm install
+
+# Copy all
+COPY . .
+
+
+# Stage 2 - Production
+
+FROM gcr.io/distroless/nodejs18-debian12
+
+# Make a working directory for stage 2
+WORKDIR /app
+
+# Copy from stage 1
+COPY --from=builder /app .
+
+# Expose port
+EXPOSE 5173
+
+# Serve the application
+CMD ["npm", "run", "dev"]
