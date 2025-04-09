@@ -1,0 +1,22 @@
+services:
+  shop-app:
+    build:
+      context: .
+    container_name: shop-app
+    ports:
+      - "5173:5173"
+    networks:
+      - my-net
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    networks:
+      - my-net
+
+
+
+networks:
+  my-net:
