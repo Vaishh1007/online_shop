@@ -1,4 +1,4 @@
-# 🏍️ Online Shop – Hackathon Phase 1 Submission
+#  Online Shop – Hackathon Phase 1 Submission
 
 Welcome to the **Online Shop** project! This is a modern e-commerce platform built using **Vite**, **Node.js**, and **Docker**.
 
@@ -14,7 +14,7 @@ Welcome to the **Online Shop** project! This is a modern e-commerce platform bui
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1️⃣ Prerequisites
 
