@@ -1,4 +1,4 @@
-#  Online Shop – Hackathon Phase 1 Submission
+# Online Shop – Hackathon Phase 1 Submission
 
 Welcome to the **Online Shop** project! This is a modern e-commerce platform built using **Vite**, **Node.js**, and **Docker**.
 
@@ -14,7 +14,7 @@ Welcome to the **Online Shop** project! This is a modern e-commerce platform bui
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### 1️⃣ Prerequisites
 
@@ -89,7 +89,7 @@ COPY --from=builder /app .
 EXPOSE 5173
 
 # Run the application
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
 ```
 
 ---
@@ -129,7 +129,7 @@ docker run -d \
   --name online_shop \
   -p 5173:5173 \
   --network my-net \
-  -v <path-of-your-volume>:/app/db \
+  -v /home/ubuntu/volume/online_shop:/app/db \
   online_shop:latest
 ```
 
