@@ -7,10 +7,15 @@ Welcome to the **Online Shop** project! This is a modern e-commerce platform bui
 ## 📜 Features
 
 - 🛒 E-commerce platform
+A fully functional online shopping experience with product listings, cart, and checkout capabilities.
 - ⚡ Built with Vite for fast development
+Uses Vite as the build tool for lightning-fast startup, hot module replacement, and optimized builds.
 - 🐳 Dockerized using a **Distroless** image for enhanced security & performance
+Containerized with a minimal, secure Distroless image for improved performance and reduced attack surface.
 - 🌐 Exposed on **port 5173** for deployment on servers
+Configured to run on port 5173, making it easy to serve in development or production environments.
 - 🔄 Supports **Volumes** & **Networks** for easy container management
+Leverages Docker volumes and networks to persist data and simplify service communication during deployment.
 
 ---
 
