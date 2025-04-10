@@ -51,11 +51,11 @@ FROM node:18 AS builder
 # Set working directory
 WORKDIR /app
 
-# Copy all files
-COPY . .
-
 # Install dependencies
 RUN npm install
+
+# Copy all files
+COPY . .
 
 # Expose port
 EXPOSE 5173
