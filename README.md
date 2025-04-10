@@ -138,12 +138,6 @@ docker run -d \
   online_shop:latest
 ```
 
-#### 📦 Step 6: Check Running Containers
-
-```bash
-docker ps
-```
-
 ---
 
 ### 4️⃣ Verify Container is Running
