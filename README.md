@@ -168,5 +168,3 @@ Built with ❤️ for the Hackathon.
 
 **Author:** [@vaishh1007](https://github.com/vaishh1007)  
 **Repository:** [Online Shop on GitHub](https://github.com/vaishh1007/online_shop)
-
-git a
