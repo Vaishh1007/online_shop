@@ -51,7 +51,8 @@ FROM node:18 AS builder
 # Set working directory
 WORKDIR /app
 
-# Install dependencies
+# Copy only package files first to optimize caching
+COPY package*.json ./
 RUN npm install
 
 # Copy all files
